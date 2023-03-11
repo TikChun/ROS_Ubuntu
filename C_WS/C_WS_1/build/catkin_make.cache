@@ -1,0 +1,2 @@
+c_ws_1
+-DCATKIN_DEVEL_PREFIX=/home/tikchuntong/Git_ROS/ROS_Ubuntu/C_WS/C_WS_1/devel -DCMAKE_INSTALL_PREFIX=/home/tikchuntong/Git_ROS/ROS_Ubuntu/C_WS/C_WS_1/install -G Unix Makefiles

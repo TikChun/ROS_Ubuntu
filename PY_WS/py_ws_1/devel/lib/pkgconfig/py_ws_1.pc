@@ -1,0 +1,8 @@
+prefix=/home/tikchuntong/Git_ROS/ROS_Ubuntu/PY_WS/py_ws_1/devel
+
+Name: py_ws_1
+Description: Description of py_ws_1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

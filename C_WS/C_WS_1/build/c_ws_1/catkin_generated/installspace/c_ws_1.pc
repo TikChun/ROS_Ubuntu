@@ -1,0 +1,8 @@
+prefix=/home/tikchuntong/Git_ROS/ROS_Ubuntu/C_WS/C_WS_1/install
+
+Name: c_ws_1
+Description: Description of c_ws_1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
