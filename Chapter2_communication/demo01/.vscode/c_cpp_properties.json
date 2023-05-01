@@ -8,7 +8,8 @@
       "includePath": [
         "/opt/ros/noetic/include/**",
         "/home/tikchuntong/ROS_education/demo01/src/helloworld/include/**",
-        "/usr/include/**"
+        "/usr/include/**",
+        "/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/devel/include/**"
       ],
       "name": "ROS",
       "intelliSenseMode": "gcc-x64",

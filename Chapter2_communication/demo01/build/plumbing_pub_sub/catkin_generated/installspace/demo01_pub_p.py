@@ -21,7 +21,7 @@ if __name__=="__main__":
     msg = String()
     rate = rospy.Rate(1)    # frequency
     count = 0
-    rospy.sleep(3)
+    rospy.sleep(3)  # avoid package lost at the start
     while not rospy.is_shutdown():
         count += 1
         msg.data = "hello: " + str(count)
