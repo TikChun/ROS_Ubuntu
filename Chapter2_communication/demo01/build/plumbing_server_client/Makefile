@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -101,6 +89,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target test
 test:
@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+plumbing_server_client/CMakeFiles/demo02_client.dir/rule:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/demo02_client.dir/rule
+.PHONY : plumbing_server_client/CMakeFiles/demo02_client.dir/rule
+
+# Convenience name for target.
+demo02_client: plumbing_server_client/CMakeFiles/demo02_client.dir/rule
+
+.PHONY : demo02_client
+
+# fast build rule for target.
+demo02_client/fast:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/demo02_client.dir/build.make plumbing_server_client/CMakeFiles/demo02_client.dir/build
+.PHONY : demo02_client/fast
+
+# Convenience name for target.
+plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/rule:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/rule
+.PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/rule
+
+# Convenience name for target.
+plumbing_server_client_generate_messages: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/rule
+
+.PHONY : plumbing_server_client_generate_messages
+
+# fast build rule for target.
+plumbing_server_client_generate_messages/fast:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/build
+.PHONY : plumbing_server_client_generate_messages/fast
+
+# Convenience name for target.
 plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule:
 	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule
@@ -228,21 +258,6 @@ plumbing_server_client_generate_messages_cpp/fast:
 .PHONY : plumbing_server_client_generate_messages_cpp/fast
 
 # Convenience name for target.
-plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/rule:
-	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/rule
-.PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/rule
-
-# Convenience name for target.
-plumbing_server_client_generate_messages: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/rule
-
-.PHONY : plumbing_server_client_generate_messages
-
-# fast build rule for target.
-plumbing_server_client_generate_messages/fast:
-	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages.dir/build
-.PHONY : plumbing_server_client_generate_messages/fast
-
-# Convenience name for target.
 plumbing_server_client/CMakeFiles/plumbing_server_client_gencpp.dir/rule:
 	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_gencpp.dir/rule
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_gencpp.dir/rule
@@ -286,6 +301,21 @@ plumbing_server_client_generate_messages_eus: plumbing_server_client/CMakeFiles/
 plumbing_server_client_generate_messages_eus/fast:
 	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/build
 .PHONY : plumbing_server_client_generate_messages_eus/fast
+
+# Convenience name for target.
+plumbing_server_client/CMakeFiles/demo01_server.dir/rule:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/demo01_server.dir/rule
+.PHONY : plumbing_server_client/CMakeFiles/demo01_server.dir/rule
+
+# Convenience name for target.
+demo01_server: plumbing_server_client/CMakeFiles/demo01_server.dir/rule
+
+.PHONY : demo01_server
+
+# fast build rule for target.
+demo01_server/fast:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/demo01_server.dir/build.make plumbing_server_client/CMakeFiles/demo01_server.dir/build
+.PHONY : demo01_server/fast
 
 # Convenience name for target.
 plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/rule:
@@ -347,6 +377,60 @@ plumbing_server_client_genlisp/fast:
 	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_genlisp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_genlisp.dir/build
 .PHONY : plumbing_server_client_genlisp/fast
 
+src/demo01_server.o: src/demo01_server.cpp.o
+
+.PHONY : src/demo01_server.o
+
+# target to build an object file
+src/demo01_server.cpp.o:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/demo01_server.dir/build.make plumbing_server_client/CMakeFiles/demo01_server.dir/src/demo01_server.cpp.o
+.PHONY : src/demo01_server.cpp.o
+
+src/demo01_server.i: src/demo01_server.cpp.i
+
+.PHONY : src/demo01_server.i
+
+# target to preprocess a source file
+src/demo01_server.cpp.i:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/demo01_server.dir/build.make plumbing_server_client/CMakeFiles/demo01_server.dir/src/demo01_server.cpp.i
+.PHONY : src/demo01_server.cpp.i
+
+src/demo01_server.s: src/demo01_server.cpp.s
+
+.PHONY : src/demo01_server.s
+
+# target to generate assembly for a file
+src/demo01_server.cpp.s:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/demo01_server.dir/build.make plumbing_server_client/CMakeFiles/demo01_server.dir/src/demo01_server.cpp.s
+.PHONY : src/demo01_server.cpp.s
+
+src/demo02_client.o: src/demo02_client.cpp.o
+
+.PHONY : src/demo02_client.o
+
+# target to build an object file
+src/demo02_client.cpp.o:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/demo02_client.dir/build.make plumbing_server_client/CMakeFiles/demo02_client.dir/src/demo02_client.cpp.o
+.PHONY : src/demo02_client.cpp.o
+
+src/demo02_client.i: src/demo02_client.cpp.i
+
+.PHONY : src/demo02_client.i
+
+# target to preprocess a source file
+src/demo02_client.cpp.i:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/demo02_client.dir/build.make plumbing_server_client/CMakeFiles/demo02_client.dir/src/demo02_client.cpp.i
+.PHONY : src/demo02_client.cpp.i
+
+src/demo02_client.s: src/demo02_client.cpp.s
+
+.PHONY : src/demo02_client.s
+
+# target to generate assembly for a file
+src/demo02_client.cpp.s:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f plumbing_server_client/CMakeFiles/demo02_client.dir/build.make plumbing_server_client/CMakeFiles/demo02_client.dir/src/demo02_client.cpp.s
+.PHONY : src/demo02_client.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -354,24 +438,32 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... demo02_client"
+	@echo "... test"
+	@echo "... plumbing_server_client_generate_messages"
 	@echo "... plumbing_server_client_genpy"
 	@echo "... _plumbing_server_client_generate_messages_check_deps_Addints"
 	@echo "... plumbing_server_client_generate_messages_nodejs"
 	@echo "... plumbing_server_client_generate_messages_cpp"
-	@echo "... plumbing_server_client_generate_messages"
-	@echo "... test"
 	@echo "... plumbing_server_client_gencpp"
 	@echo "... plumbing_server_client_gennodejs"
 	@echo "... plumbing_server_client_generate_messages_eus"
+	@echo "... demo01_server"
 	@echo "... plumbing_server_client_geneus"
 	@echo "... install/local"
 	@echo "... plumbing_server_client_generate_messages_lisp"
 	@echo "... plumbing_server_client_generate_messages_py"
 	@echo "... list_install_components"
 	@echo "... plumbing_server_client_genlisp"
+	@echo "... src/demo01_server.o"
+	@echo "... src/demo01_server.i"
+	@echo "... src/demo01_server.s"
+	@echo "... src/demo02_client.o"
+	@echo "... src/demo02_client.i"
+	@echo "... src/demo02_client.s"
 .PHONY : help
 
 
