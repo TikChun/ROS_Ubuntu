@@ -1,0 +1,8 @@
+prefix=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/install
+
+Name: plumbing_head_src
+Description: Description of plumbing_head_src
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
