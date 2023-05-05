@@ -1,0 +1,25 @@
+bg_B: 255
+bg_G: 50
+bg_R: 100
+my_turtle:
+  background_b: 255
+  background_g: 86
+  background_r: 69
+  bg_B: 255
+  bg_G: 50
+  bg_R: 100
+  param_B: 3.14
+param_A: 100
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_tikchuntong_virtualbox__33115: http://tikchuntong-VirtualBox:33115/
+    host_tikchuntong_virtualbox__33243: http://tikchuntong-VirtualBox:33243/
+    host_tikchuntong_virtualbox__33813: http://tikchuntong-VirtualBox:33813/
+    host_tikchuntong_virtualbox__43007: http://tikchuntong-VirtualBox:43007/
+rosversion: '1.15.15
+
+  '
+run_id: fb02de82-eb89-11ed-bfef-714f8ca109f2
