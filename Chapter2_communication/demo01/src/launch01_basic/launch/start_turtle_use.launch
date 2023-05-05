@@ -1,0 +1,6 @@
+<!--需要复用start_turtle.launch-->
+<launch>
+    <include file="$(find launch01_basic)/launch/start_turtle.launch" />
+    <!--其他节点-->
+</launch>
+<!--tutorial: http://www.autolabor.com.cn/book/ROSTutorials/5/45-rosjie-dianguan-li-launch-wen-jian/411-launchwen-jian-biao-qian-zhi-include.html-->
