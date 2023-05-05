@@ -35,6 +35,14 @@
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/gtest/googletest/CMakeFiles/test.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/gtest/googletest/CMakeFiles/gtest_main.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/gtest/googletest/CMakeFiles/gtest.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_my/CMakeFiles/install/strip.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_my/CMakeFiles/install/local.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_my/CMakeFiles/install.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_my/CMakeFiles/list_install_components.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_my/CMakeFiles/rebuild_cache.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_my/CMakeFiles/edit_cache.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_my/CMakeFiles/test.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_my/CMakeFiles/_catkin_empty_exported_target.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_head/CMakeFiles/install/local.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_head/CMakeFiles/rebuild_cache.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_head/CMakeFiles/edit_cache.dir

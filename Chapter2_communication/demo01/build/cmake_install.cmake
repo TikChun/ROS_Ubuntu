@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/gtest/cmake_install.cmake")
+  include("/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_my/cmake_install.cmake")
   include("/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_head/cmake_install.cmake")
   include("/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_head_src/cmake_install.cmake")
   include("/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_param_server/cmake_install.cmake")
