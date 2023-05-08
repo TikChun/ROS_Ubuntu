@@ -1,0 +1,8 @@
+prefix=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/devel
+
+Name: rename03_param
+Description: Description of rename03_param
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
