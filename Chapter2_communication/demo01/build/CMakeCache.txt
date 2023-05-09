@@ -596,6 +596,18 @@ tf02_dynamic_BINARY_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_com
 //Value Computed by CMake
 tf02_dynamic_SOURCE_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/tf02_dynamic
 
+//Value Computed by CMake
+tf02_tfs_BINARY_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_tfs
+
+//Value Computed by CMake
+tf02_tfs_SOURCE_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/tf02_tfs
+
+//Value Computed by CMake
+tf03_tfs_BINARY_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf03_tfs
+
+//Value Computed by CMake
+tf03_tfs_SOURCE_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/tf03_tfs
+
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/noetic/share/tf2/cmake
 
@@ -768,7 +780,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
