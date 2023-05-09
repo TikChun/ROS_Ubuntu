@@ -1455,6 +1455,19 @@ test01_pub_twist/fast:
 .PHONY : test01_pub_twist/fast
 
 #=============================================================================
+# Target rules for targets named demo02_dynamic_sub
+
+# Build rule for target.
+demo02_dynamic_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo02_dynamic_sub
+.PHONY : demo02_dynamic_sub
+
+# fast build rule for target.
+demo02_dynamic_sub/fast:
+	$(MAKE) -f tf02_dynamic/CMakeFiles/demo02_dynamic_sub.dir/build.make tf02_dynamic/CMakeFiles/demo02_dynamic_sub.dir/build
+.PHONY : demo02_dynamic_sub/fast
+
+#=============================================================================
 # Target rules for targets named demo01_dynamic_pub
 
 # Build rule for target.
@@ -1579,6 +1592,7 @@ help:
 	@echo "... test03_service_client"
 	@echo "... test02_sub_pose"
 	@echo "... test01_pub_twist"
+	@echo "... demo02_dynamic_sub"
 	@echo "... demo01_dynamic_pub"
 .PHONY : help
 

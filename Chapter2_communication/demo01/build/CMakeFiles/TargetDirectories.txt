@@ -213,6 +213,7 @@
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_dynamic/CMakeFiles/install/local.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_dynamic/CMakeFiles/edit_cache.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_dynamic/CMakeFiles/test.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_dynamic/CMakeFiles/demo02_dynamic_sub.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_dynamic/CMakeFiles/install.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_dynamic/CMakeFiles/list_install_components.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_dynamic/CMakeFiles/rebuild_cache.dir

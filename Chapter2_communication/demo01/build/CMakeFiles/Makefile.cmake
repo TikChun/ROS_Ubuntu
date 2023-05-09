@@ -414,5 +414,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "plumbing_test/CMakeFiles/test03_service_client.dir/DependInfo.cmake"
   "plumbing_test/CMakeFiles/test02_sub_pose.dir/DependInfo.cmake"
   "plumbing_test/CMakeFiles/test01_pub_twist.dir/DependInfo.cmake"
+  "tf02_dynamic/CMakeFiles/demo02_dynamic_sub.dir/DependInfo.cmake"
   "tf02_dynamic/CMakeFiles/demo01_dynamic_pub.dir/DependInfo.cmake"
   )
