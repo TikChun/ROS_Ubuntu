@@ -608,6 +608,12 @@ tf03_tfs_BINARY_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communi
 //Value Computed by CMake
 tf03_tfs_SOURCE_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/tf03_tfs
 
+//Value Computed by CMake
+tf04_test_BINARY_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf04_test
+
+//Value Computed by CMake
+tf04_test_SOURCE_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/tf04_test
+
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/noetic/share/tf2/cmake
 
@@ -780,7 +786,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1493,6 +1493,19 @@ demo01_dynamic_pub/fast:
 	$(MAKE) -f tf02_dynamic/CMakeFiles/demo01_dynamic_pub.dir/build.make tf02_dynamic/CMakeFiles/demo01_dynamic_pub.dir/build
 .PHONY : demo01_dynamic_pub/fast
 
+#=============================================================================
+# Target rules for targets named test01_new_turtle
+
+# Build rule for target.
+test01_new_turtle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test01_new_turtle
+.PHONY : test01_new_turtle
+
+# fast build rule for target.
+test01_new_turtle/fast:
+	$(MAKE) -f tf04_test/CMakeFiles/test01_new_turtle.dir/build.make tf04_test/CMakeFiles/test01_new_turtle.dir/build
+.PHONY : test01_new_turtle/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1608,6 +1621,7 @@ help:
 	@echo "... test01_pub_twist"
 	@echo "... demo02_dynamic_sub"
 	@echo "... demo01_dynamic_pub"
+	@echo "... test01_new_turtle"
 .PHONY : help
 
 

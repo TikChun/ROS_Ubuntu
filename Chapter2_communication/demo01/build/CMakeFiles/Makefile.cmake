@@ -46,6 +46,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "tf02_dynamic/catkin_generated/package.cmake"
   "tf03_tfs/catkin_generated/ordered_paths.cmake"
   "tf03_tfs/catkin_generated/package.cmake"
+  "tf04_test/catkin_generated/ordered_paths.cmake"
+  "tf04_test/catkin_generated/package.cmake"
   "/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/devel/share/plumbing_pub_sub/cmake/plumbing_pub_sub-msg-paths.cmake"
   "/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/devel/share/plumbing_server_client/cmake/plumbing_server_client-msg-paths.cmake"
   "/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/CMakeLists.txt"
@@ -81,6 +83,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/tf02_dynamic/package.xml"
   "/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/tf03_tfs/CMakeLists.txt"
   "/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/tf03_tfs/package.xml"
+  "/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/tf04_test/CMakeLists.txt"
+  "/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/tf04_test/package.xml"
   "/opt/ros/noetic/share/actionlib/cmake/actionlib-msg-extras.cmake"
   "/opt/ros/noetic/share/actionlib/cmake/actionlibConfig-version.cmake"
   "/opt/ros/noetic/share/actionlib/cmake/actionlibConfig.cmake"
@@ -316,6 +320,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "launch01_basic/CMakeFiles/CMakeDirectoryInformation.cmake"
   "plumbing_test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tf02_dynamic/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tf04_test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -422,4 +427,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "plumbing_test/CMakeFiles/test01_pub_twist.dir/DependInfo.cmake"
   "tf02_dynamic/CMakeFiles/demo02_dynamic_sub.dir/DependInfo.cmake"
   "tf02_dynamic/CMakeFiles/demo01_dynamic_pub.dir/DependInfo.cmake"
+  "tf04_test/CMakeFiles/test01_new_turtle.dir/DependInfo.cmake"
   )

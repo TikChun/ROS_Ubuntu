@@ -226,3 +226,11 @@
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_dynamic/CMakeFiles/list_install_components.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_dynamic/CMakeFiles/rebuild_cache.dir
 /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf02_dynamic/CMakeFiles/demo01_dynamic_pub.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf04_test/CMakeFiles/install/strip.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf04_test/CMakeFiles/install/local.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf04_test/CMakeFiles/install.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf04_test/CMakeFiles/list_install_components.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf04_test/CMakeFiles/rebuild_cache.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf04_test/CMakeFiles/edit_cache.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf04_test/CMakeFiles/test.dir
+/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/tf04_test/CMakeFiles/test01_new_turtle.dir
