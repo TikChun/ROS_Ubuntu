@@ -403,6 +403,9 @@ actionlib_msgs_DIR:PATH=/opt/ros/noetic/share/actionlib_msgs/cmake
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/noetic/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
@@ -494,6 +497,9 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
+
 //Value Computed by CMake
 plumbing_head_BINARY_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/plumbing_head
 
@@ -554,6 +560,18 @@ rename03_param_BINARY_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_c
 //Value Computed by CMake
 rename03_param_SOURCE_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/rename03_param
 
+//The directory containing a CMake configuration file for rosbag.
+rosbag_DIR:PATH=/opt/ros/noetic/share/rosbag/cmake
+
+//Value Computed by CMake
+rosbag_demo_BINARY_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/rosbag_demo
+
+//Value Computed by CMake
+rosbag_demo_SOURCE_DIR:STATIC=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/src/rosbag_demo
+
+//The directory containing a CMake configuration file for rosbag_storage.
+rosbag_storage_DIR:PATH=/opt/ros/noetic/share/rosbag_storage/cmake
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
 
@@ -571,6 +589,15 @@ rosgraph_DIR:PATH=/opt/ros/noetic/share/rosgraph/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/noetic/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/noetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for roslz4.
+roslz4_DIR:PATH=/opt/ros/noetic/share/roslz4/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/noetic/share/rospack/cmake
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/noetic/share/rospy/cmake
@@ -631,6 +658,9 @@ tf2_py_DIR:PATH=/opt/ros/noetic/share/tf2_py/cmake
 
 //The directory containing a CMake configuration file for tf2_ros.
 tf2_ros_DIR:PATH=/opt/ros/noetic/share/tf2_ros/cmake
+
+//The directory containing a CMake configuration file for topic_tools.
+topic_tools_DIR:PATH=/opt/ros/noetic/share/topic_tools/cmake
 
 //The directory containing a CMake configuration file for turtlesim.
 turtlesim_DIR:PATH=/opt/ros/noetic/share/turtlesim/cmake
@@ -786,7 +816,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
