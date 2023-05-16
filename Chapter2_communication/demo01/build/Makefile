@@ -1065,19 +1065,6 @@ std_srvs_generate_messages_py/fast:
 .PHONY : std_srvs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named topic_tools_generate_messages_cpp
-
-# Build rule for target.
-topic_tools_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_cpp
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	$(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-#=============================================================================
 # Target rules for targets named topic_tools_generate_messages_eus
 
 # Build rule for target.
@@ -1128,6 +1115,32 @@ topic_tools_generate_messages_py: cmake_check_build_system
 topic_tools_generate_messages_py/fast:
 	$(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/build
 .PHONY : topic_tools_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named topic_tools_generate_messages_cpp
+
+# Build rule for target.
+topic_tools_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_cpp
+.PHONY : topic_tools_generate_messages_cpp
+
+# fast build rule for target.
+topic_tools_generate_messages_cpp/fast:
+	$(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+.PHONY : topic_tools_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named demo02_read_bag
+
+# Build rule for target.
+demo02_read_bag: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo02_read_bag
+.PHONY : demo02_read_bag
+
+# fast build rule for target.
+demo02_read_bag/fast:
+	$(MAKE) -f rosbag_demo/CMakeFiles/demo02_read_bag.dir/build.make rosbag_demo/CMakeFiles/demo02_read_bag.dir/build
+.PHONY : demo02_read_bag/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_py
@@ -1692,11 +1705,12 @@ help:
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... std_srvs_generate_messages_py"
-	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_eus"
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... demo01_write_bag"
 	@echo "... topic_tools_generate_messages_py"
+	@echo "... topic_tools_generate_messages_cpp"
+	@echo "... demo02_read_bag"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_lisp"

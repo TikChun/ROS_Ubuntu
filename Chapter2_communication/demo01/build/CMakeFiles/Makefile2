@@ -67,6 +67,7 @@ all: rosbag_demo/all
 all: tf01_static/all
 all: tf03_tfs/all
 all: launch01_basic/all
+all: my_tf_test/all
 all: plumbing_test/all
 all: tf02_dynamic/all
 all: tf04_test/all
@@ -88,6 +89,7 @@ preinstall: rosbag_demo/preinstall
 preinstall: tf01_static/preinstall
 preinstall: tf03_tfs/preinstall
 preinstall: launch01_basic/preinstall
+preinstall: my_tf_test/preinstall
 preinstall: plumbing_test/preinstall
 preinstall: tf02_dynamic/preinstall
 preinstall: tf04_test/preinstall
@@ -114,6 +116,7 @@ clean: rosbag_demo/clean
 clean: tf01_static/clean
 clean: tf03_tfs/clean
 clean: launch01_basic/clean
+clean: my_tf_test/clean
 clean: plumbing_test/clean
 clean: tf02_dynamic/clean
 clean: tf04_test/clean
@@ -198,6 +201,24 @@ launch01_basic/clean: launch01_basic/CMakeFiles/turtlesim_generate_messages_eus.
 launch01_basic/clean: launch01_basic/CMakeFiles/turtlesim_generate_messages_cpp.dir/clean
 
 .PHONY : launch01_basic/clean
+
+#=============================================================================
+# Directory level rules for directory my_tf_test
+
+# Recursive "all" directory target.
+my_tf_test/all:
+
+.PHONY : my_tf_test/all
+
+# Recursive "preinstall" directory target.
+my_tf_test/preinstall:
+
+.PHONY : my_tf_test/preinstall
+
+# Recursive "clean" directory target.
+my_tf_test/clean:
+
+.PHONY : my_tf_test/clean
 
 #=============================================================================
 # Directory level rules for directory plumbing_head
@@ -445,6 +466,7 @@ rename03_param/clean: rename03_param/CMakeFiles/param_name.dir/clean
 
 # Recursive "all" directory target.
 rosbag_demo/all: rosbag_demo/CMakeFiles/demo01_write_bag.dir/all
+rosbag_demo/all: rosbag_demo/CMakeFiles/demo02_read_bag.dir/all
 
 .PHONY : rosbag_demo/all
 
@@ -460,11 +482,12 @@ rosbag_demo/clean: rosbag_demo/CMakeFiles/topic_tools_generate_messages_nodejs.d
 rosbag_demo/clean: rosbag_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
 rosbag_demo/clean: rosbag_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
 rosbag_demo/clean: rosbag_demo/CMakeFiles/std_srvs_generate_messages_py.dir/clean
-rosbag_demo/clean: rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
 rosbag_demo/clean: rosbag_demo/CMakeFiles/topic_tools_generate_messages_eus.dir/clean
 rosbag_demo/clean: rosbag_demo/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
 rosbag_demo/clean: rosbag_demo/CMakeFiles/demo01_write_bag.dir/clean
 rosbag_demo/clean: rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/clean
+rosbag_demo/clean: rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+rosbag_demo/clean: rosbag_demo/CMakeFiles/demo02_read_bag.dir/clean
 
 .PHONY : rosbag_demo/clean
 
@@ -711,7 +734,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=33,34 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=35,36 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -738,7 +761,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=31,32 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=33,34 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -765,7 +788,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=37,38 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=39,40 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -792,7 +815,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=35,36 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=37,38 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1130,7 +1153,7 @@ plumbing_head/CMakeFiles/hello.dir/all: plumbing_head/CMakeFiles/roscpp_generate
 plumbing_head/CMakeFiles/hello.dir/all: plumbing_head/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(MAKE) -f plumbing_head/CMakeFiles/hello.dir/build.make plumbing_head/CMakeFiles/hello.dir/depend
 	$(MAKE) -f plumbing_head/CMakeFiles/hello.dir/build.make plumbing_head/CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=41,42 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=43,44 "Built target hello"
 .PHONY : plumbing_head/CMakeFiles/hello.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1307,7 +1330,7 @@ plumbing_head_src/CMakeFiles/use_hello.dir/all: plumbing_head/CMakeFiles/rosgrap
 plumbing_head_src/CMakeFiles/use_hello.dir/all: plumbing_head_src/CMakeFiles/head_src.dir/all
 	$(MAKE) -f plumbing_head_src/CMakeFiles/use_hello.dir/build.make plumbing_head_src/CMakeFiles/use_hello.dir/depend
 	$(MAKE) -f plumbing_head_src/CMakeFiles/use_hello.dir/build.make plumbing_head_src/CMakeFiles/use_hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=75,76 "Built target use_hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=77,78 "Built target use_hello"
 .PHONY : plumbing_head_src/CMakeFiles/use_hello.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1348,7 +1371,7 @@ plumbing_head_src/CMakeFiles/head_src.dir/all: plumbing_head/CMakeFiles/roscpp_g
 plumbing_head_src/CMakeFiles/head_src.dir/all: plumbing_head/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(MAKE) -f plumbing_head_src/CMakeFiles/head_src.dir/build.make plumbing_head_src/CMakeFiles/head_src.dir/depend
 	$(MAKE) -f plumbing_head_src/CMakeFiles/head_src.dir/build.make plumbing_head_src/CMakeFiles/head_src.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=39,40 "Built target head_src"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=41,42 "Built target head_src"
 .PHONY : plumbing_head_src/CMakeFiles/head_src.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1375,7 +1398,7 @@ plumbing_head_src/CMakeFiles/head_src.dir/clean:
 plumbing_param_server/CMakeFiles/demo03_param_del.dir/all:
 	$(MAKE) -f plumbing_param_server/CMakeFiles/demo03_param_del.dir/build.make plumbing_param_server/CMakeFiles/demo03_param_del.dir/depend
 	$(MAKE) -f plumbing_param_server/CMakeFiles/demo03_param_del.dir/build.make plumbing_param_server/CMakeFiles/demo03_param_del.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=25,26 "Built target demo03_param_del"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=27,28 "Built target demo03_param_del"
 .PHONY : plumbing_param_server/CMakeFiles/demo03_param_del.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1456,7 +1479,7 @@ plumbing_param_server/CMakeFiles/demo01_param_set.dir/clean:
 plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/build.make plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/build.make plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=29,30 "Built target demo04_sub_person"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=31,32 "Built target demo04_sub_person"
 .PHONY : plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1483,7 +1506,7 @@ plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/clean:
 plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/build.make plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/build.make plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=27,28 "Built target demo03_pub_person"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=29,30 "Built target demo03_pub_person"
 .PHONY : plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1510,7 +1533,7 @@ plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/clean:
 plumbing_pub_sub/CMakeFiles/demo02_sub.dir/all:
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/demo02_sub.dir/build.make plumbing_pub_sub/CMakeFiles/demo02_sub.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/demo02_sub.dir/build.make plumbing_pub_sub/CMakeFiles/demo02_sub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=23,24 "Built target demo02_sub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=25,26 "Built target demo02_sub"
 .PHONY : plumbing_pub_sub/CMakeFiles/demo02_sub.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1565,7 +1588,7 @@ plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all: plum
 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=45 "Built target plumbing_pub_sub_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=47 "Built target plumbing_pub_sub_generate_messages_cpp"
 .PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1620,7 +1643,7 @@ plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/all: plum
 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=46,47 "Built target plumbing_pub_sub_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=48,49 "Built target plumbing_pub_sub_generate_messages_eus"
 .PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1648,7 +1671,7 @@ plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/all: plu
 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=48 "Built target plumbing_pub_sub_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=50 "Built target plumbing_pub_sub_generate_messages_lisp"
 .PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1676,7 +1699,7 @@ plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/all: plumb
 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=50,51 "Built target plumbing_pub_sub_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=52,53 "Built target plumbing_pub_sub_generate_messages_py"
 .PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1789,7 +1812,7 @@ plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/all: p
 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=49 "Built target plumbing_pub_sub_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=51 "Built target plumbing_pub_sub_generate_messages_nodejs"
 .PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2010,7 +2033,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodej
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/all: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Addints.dir/all
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/depend
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=56 "Built target plumbing_server_client_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=58 "Built target plumbing_server_client_generate_messages_nodejs"
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2038,7 +2061,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.d
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/all: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Addints.dir/all
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/depend
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=52 "Built target plumbing_server_client_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=54 "Built target plumbing_server_client_generate_messages_cpp"
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2120,7 +2143,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.d
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/all: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Addints.dir/all
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/depend
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=53,54 "Built target plumbing_server_client_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=55,56 "Built target plumbing_server_client_generate_messages_eus"
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2202,7 +2225,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/all: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Addints.dir/all
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/depend
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=55 "Built target plumbing_server_client_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=57 "Built target plumbing_server_client_generate_messages_lisp"
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2230,7 +2253,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.di
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/all: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Addints.dir/all
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/depend
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=57,58 "Built target plumbing_server_client_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=59,60 "Built target plumbing_server_client_generate_messages_py"
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2284,7 +2307,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_genlisp.dir/clean:
 rename02_topic/CMakeFiles/topic_name.dir/all:
 	$(MAKE) -f rename02_topic/CMakeFiles/topic_name.dir/build.make rename02_topic/CMakeFiles/topic_name.dir/depend
 	$(MAKE) -f rename02_topic/CMakeFiles/topic_name.dir/build.make rename02_topic/CMakeFiles/topic_name.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=73,74 "Built target topic_name"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=75,76 "Built target topic_name"
 .PHONY : rename02_topic/CMakeFiles/topic_name.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2311,7 +2334,7 @@ rename02_topic/CMakeFiles/topic_name.dir/clean:
 rename03_param/CMakeFiles/param_name.dir/all:
 	$(MAKE) -f rename03_param/CMakeFiles/param_name.dir/build.make rename03_param/CMakeFiles/param_name.dir/depend
 	$(MAKE) -f rename03_param/CMakeFiles/param_name.dir/build.make rename03_param/CMakeFiles/param_name.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=43,44 "Built target param_name"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=45,46 "Built target param_name"
 .PHONY : rename03_param/CMakeFiles/param_name.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2494,33 +2517,6 @@ rosbag_demo/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
 .PHONY : rosbag_demo/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir
-
-# All Build rule for target.
-rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/all:
-	$(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/depend
-	$(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num= "Built target topic_tools_generate_messages_cpp"
-.PHONY : rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles 0
-.PHONY : rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_cpp: rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-.PHONY : topic_tools_generate_messages_cpp
-
-# clean rule for target.
-rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean:
-	$(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
-.PHONY : rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
-
-#=============================================================================
 # Target rules for target rosbag_demo/CMakeFiles/topic_tools_generate_messages_eus.dir
 
 # All Build rule for target.
@@ -2599,10 +2595,10 @@ rosbag_demo/CMakeFiles/demo01_write_bag.dir/all: rosbag_demo/CMakeFiles/topic_to
 rosbag_demo/CMakeFiles/demo01_write_bag.dir/all: rosbag_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
 rosbag_demo/CMakeFiles/demo01_write_bag.dir/all: rosbag_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
 rosbag_demo/CMakeFiles/demo01_write_bag.dir/all: rosbag_demo/CMakeFiles/std_srvs_generate_messages_py.dir/all
-rosbag_demo/CMakeFiles/demo01_write_bag.dir/all: rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
 rosbag_demo/CMakeFiles/demo01_write_bag.dir/all: rosbag_demo/CMakeFiles/topic_tools_generate_messages_eus.dir/all
 rosbag_demo/CMakeFiles/demo01_write_bag.dir/all: rosbag_demo/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
 rosbag_demo/CMakeFiles/demo01_write_bag.dir/all: rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/all
+rosbag_demo/CMakeFiles/demo01_write_bag.dir/all: rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
 	$(MAKE) -f rosbag_demo/CMakeFiles/demo01_write_bag.dir/build.make rosbag_demo/CMakeFiles/demo01_write_bag.dir/depend
 	$(MAKE) -f rosbag_demo/CMakeFiles/demo01_write_bag.dir/build.make rosbag_demo/CMakeFiles/demo01_write_bag.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=13,14 "Built target demo01_write_bag"
@@ -2651,6 +2647,84 @@ topic_tools_generate_messages_py: rosbag_demo/CMakeFiles/topic_tools_generate_me
 rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/clean:
 	$(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/clean
 .PHONY : rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir
+
+# All Build rule for target.
+rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/all:
+	$(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/depend
+	$(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num= "Built target topic_tools_generate_messages_cpp"
+.PHONY : rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles 0
+.PHONY : rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_cpp: rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+.PHONY : topic_tools_generate_messages_cpp
+
+# clean rule for target.
+rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean:
+	$(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+.PHONY : rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target rosbag_demo/CMakeFiles/demo02_read_bag.dir
+
+# All Build rule for target.
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/std_msgs_generate_messages_py.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/roscpp_generate_messages_eus.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/roscpp_generate_messages_py.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: plumbing_head/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: rosbag_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: rosbag_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: rosbag_demo/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: rosbag_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: rosbag_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: rosbag_demo/CMakeFiles/std_srvs_generate_messages_py.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: rosbag_demo/CMakeFiles/topic_tools_generate_messages_eus.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: rosbag_demo/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/all
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/all: rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+	$(MAKE) -f rosbag_demo/CMakeFiles/demo02_read_bag.dir/build.make rosbag_demo/CMakeFiles/demo02_read_bag.dir/depend
+	$(MAKE) -f rosbag_demo/CMakeFiles/demo02_read_bag.dir/build.make rosbag_demo/CMakeFiles/demo02_read_bag.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=21,22 "Built target demo02_read_bag"
+.PHONY : rosbag_demo/CMakeFiles/demo02_read_bag.dir/all
+
+# Build rule for subdir invocation for target.
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 rosbag_demo/CMakeFiles/demo02_read_bag.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles 0
+.PHONY : rosbag_demo/CMakeFiles/demo02_read_bag.dir/rule
+
+# Convenience name for target.
+demo02_read_bag: rosbag_demo/CMakeFiles/demo02_read_bag.dir/rule
+
+.PHONY : demo02_read_bag
+
+# clean rule for target.
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/clean:
+	$(MAKE) -f rosbag_demo/CMakeFiles/demo02_read_bag.dir/build.make rosbag_demo/CMakeFiles/demo02_read_bag.dir/clean
+.PHONY : rosbag_demo/CMakeFiles/demo02_read_bag.dir/clean
 
 #=============================================================================
 # Target rules for target tf01_static/CMakeFiles/actionlib_generate_messages_py.dir
@@ -3267,7 +3341,7 @@ tf01_static/CMakeFiles/demo02_static_sub.dir/all: tf01_static/CMakeFiles/actionl
 tf01_static/CMakeFiles/demo02_static_sub.dir/all: tf01_static/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f tf01_static/CMakeFiles/demo02_static_sub.dir/build.make tf01_static/CMakeFiles/demo02_static_sub.dir/depend
 	$(MAKE) -f tf01_static/CMakeFiles/demo02_static_sub.dir/build.make tf01_static/CMakeFiles/demo02_static_sub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=21,22 "Built target demo02_static_sub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=23,24 "Built target demo02_static_sub"
 .PHONY : tf01_static/CMakeFiles/demo02_static_sub.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3546,7 +3620,7 @@ plumbing_test/CMakeFiles/test04_param.dir/all: launch01_basic/CMakeFiles/turtles
 plumbing_test/CMakeFiles/test04_param.dir/all: launch01_basic/CMakeFiles/turtlesim_generate_messages_cpp.dir/all
 	$(MAKE) -f plumbing_test/CMakeFiles/test04_param.dir/build.make plumbing_test/CMakeFiles/test04_param.dir/depend
 	$(MAKE) -f plumbing_test/CMakeFiles/test04_param.dir/build.make plumbing_test/CMakeFiles/test04_param.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=71,72 "Built target test04_param"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=73,74 "Built target test04_param"
 .PHONY : plumbing_test/CMakeFiles/test04_param.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3602,7 +3676,7 @@ plumbing_test/CMakeFiles/test03_service_client.dir/all: launch01_basic/CMakeFile
 plumbing_test/CMakeFiles/test03_service_client.dir/all: launch01_basic/CMakeFiles/turtlesim_generate_messages_cpp.dir/all
 	$(MAKE) -f plumbing_test/CMakeFiles/test03_service_client.dir/build.make plumbing_test/CMakeFiles/test03_service_client.dir/depend
 	$(MAKE) -f plumbing_test/CMakeFiles/test03_service_client.dir/build.make plumbing_test/CMakeFiles/test03_service_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=69,70 "Built target test03_service_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=71,72 "Built target test03_service_client"
 .PHONY : plumbing_test/CMakeFiles/test03_service_client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3658,7 +3732,7 @@ plumbing_test/CMakeFiles/test02_sub_pose.dir/all: launch01_basic/CMakeFiles/turt
 plumbing_test/CMakeFiles/test02_sub_pose.dir/all: launch01_basic/CMakeFiles/turtlesim_generate_messages_cpp.dir/all
 	$(MAKE) -f plumbing_test/CMakeFiles/test02_sub_pose.dir/build.make plumbing_test/CMakeFiles/test02_sub_pose.dir/depend
 	$(MAKE) -f plumbing_test/CMakeFiles/test02_sub_pose.dir/build.make plumbing_test/CMakeFiles/test02_sub_pose.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=65,66 "Built target test02_sub_pose"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=67,68 "Built target test02_sub_pose"
 .PHONY : plumbing_test/CMakeFiles/test02_sub_pose.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3714,7 +3788,7 @@ plumbing_test/CMakeFiles/test01_pub_twist.dir/all: launch01_basic/CMakeFiles/tur
 plumbing_test/CMakeFiles/test01_pub_twist.dir/all: launch01_basic/CMakeFiles/turtlesim_generate_messages_cpp.dir/all
 	$(MAKE) -f plumbing_test/CMakeFiles/test01_pub_twist.dir/build.make plumbing_test/CMakeFiles/test01_pub_twist.dir/depend
 	$(MAKE) -f plumbing_test/CMakeFiles/test01_pub_twist.dir/build.make plumbing_test/CMakeFiles/test01_pub_twist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=61,62 "Built target test01_pub_twist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=63,64 "Built target test01_pub_twist"
 .PHONY : plumbing_test/CMakeFiles/test01_pub_twist.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3927,7 +4001,7 @@ tf04_test/CMakeFiles/test03_pub_control_turtle2.dir/all: launch01_basic/CMakeFil
 tf04_test/CMakeFiles/test03_pub_control_turtle2.dir/all: launch01_basic/CMakeFiles/turtlesim_generate_messages_cpp.dir/all
 	$(MAKE) -f tf04_test/CMakeFiles/test03_pub_control_turtle2.dir/build.make tf04_test/CMakeFiles/test03_pub_control_turtle2.dir/depend
 	$(MAKE) -f tf04_test/CMakeFiles/test03_pub_control_turtle2.dir/build.make tf04_test/CMakeFiles/test03_pub_control_turtle2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=67,68 "Built target test03_pub_control_turtle2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=69,70 "Built target test03_pub_control_turtle2"
 .PHONY : tf04_test/CMakeFiles/test03_pub_control_turtle2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3998,7 +4072,7 @@ tf04_test/CMakeFiles/test02_pub_turtle.dir/all: launch01_basic/CMakeFiles/turtle
 tf04_test/CMakeFiles/test02_pub_turtle.dir/all: launch01_basic/CMakeFiles/turtlesim_generate_messages_cpp.dir/all
 	$(MAKE) -f tf04_test/CMakeFiles/test02_pub_turtle.dir/build.make tf04_test/CMakeFiles/test02_pub_turtle.dir/depend
 	$(MAKE) -f tf04_test/CMakeFiles/test02_pub_turtle.dir/build.make tf04_test/CMakeFiles/test02_pub_turtle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=63,64 "Built target test02_pub_turtle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=65,66 "Built target test02_pub_turtle"
 .PHONY : tf04_test/CMakeFiles/test02_pub_turtle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4069,7 +4143,7 @@ tf04_test/CMakeFiles/test01_new_turtle.dir/all: launch01_basic/CMakeFiles/turtle
 tf04_test/CMakeFiles/test01_new_turtle.dir/all: launch01_basic/CMakeFiles/turtlesim_generate_messages_cpp.dir/all
 	$(MAKE) -f tf04_test/CMakeFiles/test01_new_turtle.dir/build.make tf04_test/CMakeFiles/test01_new_turtle.dir/depend
 	$(MAKE) -f tf04_test/CMakeFiles/test01_new_turtle.dir/build.make tf04_test/CMakeFiles/test01_new_turtle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=59,60 "Built target test01_new_turtle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build/CMakeFiles --progress-num=61,62 "Built target test01_new_turtle"
 .PHONY : tf04_test/CMakeFiles/test01_new_turtle.dir/all
 
 # Build rule for subdir invocation for target.

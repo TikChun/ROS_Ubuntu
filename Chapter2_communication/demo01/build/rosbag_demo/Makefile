@@ -258,21 +258,6 @@ std_srvs_generate_messages_py/fast:
 .PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
-rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
-	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f CMakeFiles/Makefile2 rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_cpp: rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-# Convenience name for target.
 rosbag_demo/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
 	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f CMakeFiles/Makefile2 rosbag_demo/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
 .PHONY : rosbag_demo/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
@@ -332,6 +317,36 @@ topic_tools_generate_messages_py/fast:
 	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_py.dir/build
 .PHONY : topic_tools_generate_messages_py/fast
 
+# Convenience name for target.
+rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f CMakeFiles/Makefile2 rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+.PHONY : rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_cpp: rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+.PHONY : topic_tools_generate_messages_cpp
+
+# fast build rule for target.
+topic_tools_generate_messages_cpp/fast:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosbag_demo/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+.PHONY : topic_tools_generate_messages_cpp/fast
+
+# Convenience name for target.
+rosbag_demo/CMakeFiles/demo02_read_bag.dir/rule:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f CMakeFiles/Makefile2 rosbag_demo/CMakeFiles/demo02_read_bag.dir/rule
+.PHONY : rosbag_demo/CMakeFiles/demo02_read_bag.dir/rule
+
+# Convenience name for target.
+demo02_read_bag: rosbag_demo/CMakeFiles/demo02_read_bag.dir/rule
+
+.PHONY : demo02_read_bag
+
+# fast build rule for target.
+demo02_read_bag/fast:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f rosbag_demo/CMakeFiles/demo02_read_bag.dir/build.make rosbag_demo/CMakeFiles/demo02_read_bag.dir/build
+.PHONY : demo02_read_bag/fast
+
 src/demo01_write_bag.o: src/demo01_write_bag.cpp.o
 
 .PHONY : src/demo01_write_bag.o
@@ -359,6 +374,33 @@ src/demo01_write_bag.cpp.s:
 	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f rosbag_demo/CMakeFiles/demo01_write_bag.dir/build.make rosbag_demo/CMakeFiles/demo01_write_bag.dir/src/demo01_write_bag.cpp.s
 .PHONY : src/demo01_write_bag.cpp.s
 
+src/demo02_read_bag.o: src/demo02_read_bag.cpp.o
+
+.PHONY : src/demo02_read_bag.o
+
+# target to build an object file
+src/demo02_read_bag.cpp.o:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f rosbag_demo/CMakeFiles/demo02_read_bag.dir/build.make rosbag_demo/CMakeFiles/demo02_read_bag.dir/src/demo02_read_bag.cpp.o
+.PHONY : src/demo02_read_bag.cpp.o
+
+src/demo02_read_bag.i: src/demo02_read_bag.cpp.i
+
+.PHONY : src/demo02_read_bag.i
+
+# target to preprocess a source file
+src/demo02_read_bag.cpp.i:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f rosbag_demo/CMakeFiles/demo02_read_bag.dir/build.make rosbag_demo/CMakeFiles/demo02_read_bag.dir/src/demo02_read_bag.cpp.i
+.PHONY : src/demo02_read_bag.cpp.i
+
+src/demo02_read_bag.s: src/demo02_read_bag.cpp.s
+
+.PHONY : src/demo02_read_bag.s
+
+# target to generate assembly for a file
+src/demo02_read_bag.cpp.s:
+	cd /home/tikchuntong/Git_ROS/ROS_Ubuntu/Chapter2_communication/demo01/build && $(MAKE) -f rosbag_demo/CMakeFiles/demo02_read_bag.dir/build.make rosbag_demo/CMakeFiles/demo02_read_bag.dir/src/demo02_read_bag.cpp.s
+.PHONY : src/demo02_read_bag.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -375,7 +417,6 @@ help:
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... std_srvs_generate_messages_py"
-	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_eus"
 	@echo "... test"
 	@echo "... topic_tools_generate_messages_lisp"
@@ -383,9 +424,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... topic_tools_generate_messages_py"
+	@echo "... topic_tools_generate_messages_cpp"
+	@echo "... demo02_read_bag"
 	@echo "... src/demo01_write_bag.o"
 	@echo "... src/demo01_write_bag.i"
 	@echo "... src/demo01_write_bag.s"
+	@echo "... src/demo02_read_bag.o"
+	@echo "... src/demo02_read_bag.i"
+	@echo "... src/demo02_read_bag.s"
 .PHONY : help
 
 
