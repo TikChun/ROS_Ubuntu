@@ -1,2 +1,2 @@
-urdf01_rviz
+urdf01_rviz:urdf02_gazebo
 -DCMAKE_BUILD_TYPE=RelWithDebInfo -G Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/tikchuntong/Git_ROS/ROS_Ubuntu/SIM/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/tikchuntong/Git_ROS/ROS_Ubuntu/SIM/install_isolated

@@ -1,0 +1,8 @@
+prefix=/home/tikchuntong/Git_ROS/ROS_Ubuntu/SIM/devel_isolated/urdf02_gazebo
+
+Name: urdf02_gazebo
+Description: Description of urdf02_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

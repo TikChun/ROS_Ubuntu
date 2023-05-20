@@ -6,4 +6,4 @@ if [ ! -z "$_CATKIN_SETUP_DIR" ] && [ "$_CATKIN_SETUP_DIR" != "/home/tikchuntong
   return 1
 fi
 
-_CATKIN_SETUP_DIR= . "/home/tikchuntong/Git_ROS/ROS_Ubuntu/SIM/devel_isolated/urdf01_rviz/setup.sh"
+_CATKIN_SETUP_DIR= . "/home/tikchuntong/Git_ROS/ROS_Ubuntu/SIM/devel_isolated/urdf02_gazebo/setup.sh"
