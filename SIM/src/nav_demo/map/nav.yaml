@@ -1,7 +1,12 @@
 image: /home/tikchuntong/Git_ROS/ROS_Ubuntu/SIM/src/nav_demo/map/nav.pgm
+# meter / pixel
 resolution: 0.050000
+# map position (lower right corner, relative to origin point in RVIZ) [X,Y,radian]
 origin: [-50.000000, -50.000000, 0.000000]
 negate: 0
 occupied_thresh: 0.65
 free_thresh: 0.196
-
+# white: ok; black: obstacle; blue-grey: unknown
+# each pixel have a int p, range in [0,255]; white:255, black:0
+# if(p > occupied_thresh) obstacle:
+# if(p < free_thresh) ok;
